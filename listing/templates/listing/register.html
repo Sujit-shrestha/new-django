@@ -1,0 +1,25 @@
+{% extends 'listing/layout.html' %} {% block body %}
+
+<div class="login">
+  <h1>Register</h1>
+  <form method="post">
+    <input type="text" name="email" placeholder="email" required="required" />
+    <input type="text" name="u" placeholder="Username" required="required" />
+    <input
+      type="password"
+      name="p"
+      placeholder="Password"
+      required="required"
+    />
+    <input
+      type="password"
+      name="confirmation"
+      placeholder="confirm"
+      required="required"
+    />
+    <button type="submit" class="btn btn-primary btn-block btn-large">
+        Register
+    </button>
+  </form>
+</div>
+{% endblock %}

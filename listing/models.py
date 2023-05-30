@@ -7,6 +7,7 @@ class User(AbstractUser):
     pass
 
 class Room(models.Model):
+    room_owner = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     description = models.TextField()
     price = models.DecimalField(max_digits=8, decimal_places=2)

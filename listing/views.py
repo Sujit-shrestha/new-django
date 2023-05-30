@@ -14,8 +14,8 @@ def room_list(request):
 
 def index(request):
     if request.user.is_authenticated:
-        return JsonResponse({"user":"logged in"})
-    return JsonResponse({"login":"login_view"})
+        return render(request,"listing/search.html")
+    return render(request,"listing/register.html")
 
 
 def login_view(request):
